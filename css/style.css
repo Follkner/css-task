@@ -1,0 +1,121 @@
+body {  
+    margin: 0;
+    padding: 0;  
+}
+
+header h1 {
+    padding: 0;
+    margin: 0;
+    font-family: "Arial Narrow", sans-serif;
+    font-weight: 900;
+    color: black;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    background: linear-gradient(to left, #f4e842, #baad05);
+    text-shadow: 3px 3px 3px gray;
+}
+
+header nav h2 {
+    padding: 20px 0 0 40px;
+    margin: 0;
+    color: white;
+    text-decoration: underline;
+    position: absolute;
+    transform: rotate(-10deg);
+    top: 50px;
+    font-size: 60px;
+}
+
+header nav {
+    padding: 0;
+    margin: 0;
+    background: 
+    linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+    url(../img/fon.jpg);
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 100px 40px;
+    padding-top: 120px;
+}
+
+header nav ul:after {
+    content: "";
+    flex: auto;
+}
+
+header nav ul li {
+    z-index: 100;
+    list-style-type: none;
+    background-color: rgba(208, 211, 8, 0.9);
+    border: 1px gray solid;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    box-shadow: 0 0 10px 1px white;
+    transition: all 0.2s;
+}
+
+header nav ul li:hover {
+    background-color: rgb(208, 211, 8);   
+}
+
+header nav ul li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+header nav ul li a:first-child {
+    border-bottom: 2px blue solid;
+}
+
+article {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border-left: 2px gray solid;
+    border-right: 2px gray solid;
+    box-shadow: 0 0 100px 1px yellow;
+    background: linear-gradient(to right top, #eeefe1, #fbfcf2);
+    position: relative;
+}
+article h2 {
+    font-family: "Luminari", fantasy;
+}
+
+article header::before {
+    content: "CSS";
+    position: absolute;
+    transform: rotate(270deg);
+    font-family: "Luminari", fantasy;
+    font-weight: 900;
+    font-size: 160px;
+    left: -220px;
+    top: 200px;
+}
+
+article p {
+    font-family: "Georgia", serif;
+}
+
+footer {
+    margin-top: 40px;
+    border-top: 1px solid gray;
+    text-align: center;
+    height: 60px;
+    background: linear-gradient(to top, #d5d6cd, #f6f7ed);
+}
+
+footer p {
+    padding-top: 5px;
+    font-family: "Brush Script MT", "Brush Script Std", cursive;
+}
