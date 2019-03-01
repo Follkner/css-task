@@ -8,11 +8,11 @@ header h1 {
     margin: 0;
     font-family: "Arial Narrow", sans-serif;
     font-weight: 900;
-    color: black;
+    color: white;
     text-align: center;
     border-bottom: 1px solid gray;
-    background: linear-gradient(to left, #f4e842, #baad05);
-    text-shadow: 3px 3px 3px gray;
+    background: linear-gradient(to left, #ceccb3, #91918e);
+    text-shadow: 2px 2px 2px black;
 }
 
 header nav h2 {
@@ -54,9 +54,6 @@ header nav ul:after {
 header nav ul li {
     z-index: 100;
     list-style-type: none;
-    background-color: rgba(208, 211, 8, 0.9);
-    border: 1px gray solid;
-    border-radius: 10px;
     margin-right: 20px;
     margin-bottom: 15px;
     padding: 5px 10px;
@@ -64,14 +61,19 @@ header nav ul li {
     transition: all 0.2s;
 }
 
-header nav ul li:hover {
-    background-color: rgb(208, 211, 8);   
-}
+header nav ul li:hover {  
+    background-color: #0cb4ce;   
+}  
 
 header nav ul li a {
+    color: white;
     display: block;
     text-decoration: none;
     text-align: center;
+}
+
+header nav ul li a:hover {
+    color: blue;
 }
 
 header nav ul li a:first-child {
@@ -84,7 +86,7 @@ article {
     padding: 20px;
     border-left: 2px gray solid;
     border-right: 2px gray solid;
-    box-shadow: 0 0 100px 1px yellow;
+    box-shadow: 0 0 100px 1px black;
     background: linear-gradient(to right top, #eeefe1, #fbfcf2);
     position: relative;
 }
