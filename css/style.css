@@ -121,3 +121,7 @@ footer p {
     padding-top: 5px;
     font-family: "Brush Script MT", "Brush Script Std", cursive;
 }
+
+article header, article section {
+    border-bottom: 2px black dotted;
+}
